@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="284" viewBox="0 0 880 284" role="img" aria-label="Recovery flow: Detect, Explain, Optimize, Retry">
+<title>Recovery flow: Detect, Explain, Optimize, Retry</title>
+<rect x="0.5" y="0.5" width="879" height="283" rx="14" fill="#0d1117" stroke="#30363d"/>
+<text x="28" y="40" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf3">How a failed upload is rescued</text>
+<text x="28" y="62" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">Bounded, cancellable, and the original file is never modified</text>
+<rect x="28" y="90" width="186" height="112" rx="10" fill="#161b22" stroke="#30363d"/>
+<circle cx="54" cy="118" r="12" fill="#e6edf3"/>
+<text x="54" y="122.5" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0d1117" text-anchor="middle">1</text>
+<text x="74" y="123" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Detect</text>
+<text x="44" y="158" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">413 · S3 EntityTooLarge</text>
+<text x="44" y="178" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">network · timeout · custom</text>
+<path d="M218 146 h18 m-6 -6 l6 6 l-6 6" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="240" y="90" width="186" height="112" rx="10" fill="#161b22" stroke="#30363d"/>
+<circle cx="266" cy="118" r="12" fill="#e6edf3"/>
+<text x="266" y="122.5" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0d1117" text-anchor="middle">2</text>
+<text x="286" y="123" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Explain</text>
+<text x="256" y="158" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">“Maximum allowed: 2 MB.</text>
+<text x="256" y="178" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Your file: 8.4 MB.”</text>
+<path d="M430 146 h18 m-6 -6 l6 6 l-6 6" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="452" y="90" width="186" height="112" rx="10" fill="#161b22" stroke="#30363d"/>
+<circle cx="478" cy="118" r="12" fill="#e6edf3"/>
+<text x="478" y="122.5" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0d1117" text-anchor="middle">3</text>
+<text x="498" y="123" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Optimize</text>
+<text x="468" y="158" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">in the browser (Worker)</text>
+<text x="468" y="178" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">validated against limits</text>
+<path d="M642 146 h18 m-6 -6 l6 6 l-6 6" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="664" y="90" width="186" height="112" rx="10" fill="#161b22" stroke="#30363d"/>
+<circle cx="690" cy="118" r="12" fill="#3fb950"/>
+<text x="690" y="122.5" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0d1117" text-anchor="middle">4</text>
+<text x="710" y="123" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Retry</text>
+<text x="680" y="158" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">your upload function,</text>
+<text x="680" y="178" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">fresh context &amp; signed URL</text>
+<rect x="28" y="222" width="824" height="40" rx="10" fill="none" stroke="#30363d" stroke-dasharray="4 4"/>
+<text x="48" y="247" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">Never retried automatically:  401/403 auth  ·  415 type  ·  429 rate limit  ·  5xx server  →  a clear, final error message</text>
+</svg>

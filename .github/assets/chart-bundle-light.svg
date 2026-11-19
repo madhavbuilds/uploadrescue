@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="298" viewBox="0 0 880 298" role="img" aria-label="Bundle size added by UploadRescue">
+<title>Bundle size added by UploadRescue</title>
+<rect x="0.5" y="0.5" width="879" height="297" rx="14" fill="#ffffff" stroke="#e4e4e7"/>
+<text x="28" y="40" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#171717">What it adds to your bundle</text>
+<text x="28" y="62" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b">Measured with esbuild, minified + gzip, on 2026-11-19 · peer dependencies (React) excluded</text>
+<text x="28" y="98" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">React: &lt;UploadRescue&gt; (react external)</text>
+<rect x="28" y="107" width="343.80747663551404" height="16" rx="4" fill="#171717"/>
+<rect x="373.80747663551404" y="107" width="162.94953271028038" height="16" rx="4" fill="#86efac"/>
+<text x="546.7570093457944" y="120" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b">13.8 KB + 6.5 KB on first optimization</text>
+<text x="28" y="150" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Vanilla: createUploadRescue</text>
+<rect x="28" y="159" width="357.0504672897196" height="16" rx="4" fill="#171717"/>
+<rect x="387.0504672897196" y="159" width="162.94953271028038" height="16" rx="4" fill="#86efac"/>
+<text x="560" y="172" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b">14.3 KB + 6.5 KB on first optimization</text>
+<text x="28" y="202" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Core only: createUploadRescue</text>
+<rect x="28" y="211" width="232.00747663551402" height="16" rx="4" fill="#171717"/>
+<text x="272.007476635514" y="224" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b">9.3 KB</text>
+<rect x="28" y="248" width="12" height="12" rx="3" fill="#171717"/><text x="46" y="258" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">initial load</text>
+<rect x="130" y="248" width="12" height="12" rx="3" fill="#86efac"/><text x="148" y="258" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">image engine, loaded only when a file needs optimizing</text>
+<text x="28" y="280" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Optional engines are separate: pdf-lib (184.0 KB) loads only for PDFs; FFmpeg (~30 MB) only for media, from your server.</text>
+</svg>

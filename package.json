@@ -1,0 +1,67 @@
+{
+  "name": "uploadrescue-monorepo",
+  "private": true,
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "turbo run build --filter=./packages/*",
+    "build:all": "turbo run build",
+    "dev": "pnpm --filter @uploadrescue/website dev",
+    "typecheck": "turbo run typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "check:docs": "node scripts/check-docs-snippets.mjs",
+    "check:exports": "node scripts/check-exports.mjs",
+    "size": "node scripts/bundle-size.mjs",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "bench": "playwright test --config benchmarks/playwright.config.ts",
+    "readme:assets": "node scripts/readme-assets.mjs",
+    "demo:record": "node scripts/record-demo.mjs"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.0",
+    "@eslint/js": "^9.30.0",
+    "@playwright/test": "1.49.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.30.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "fflate": "^0.8.2",
+    "globals": "^16.0.0",
+    "happy-dom": "^18.0.0",
+    "pdf-lib": "^1.17.1",
+    "prettier": "^3.6.0",
+    "publint": "^0.3.12",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsup": "^8.5.0",
+    "turbo": "^2.5.0",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.40.0",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.4"
+  },
+  "type": "module",
+  "pnpm": {
+    "overrides": {
+      "postcss@<8.5.23": "^8.5.23"
+    },
+    "auditConfig": {
+      "ignoreGhsas": [
+        "GHSA-7mvr-c777-76hp"
+      ]
+    }
+  }
+}

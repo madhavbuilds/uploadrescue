@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="396" viewBox="0 0 880 396" role="img" aria-label="Optimization time per file type">
+<title>Optimization time per file type</title>
+<rect x="0.5" y="0.5" width="879" height="395" rx="14" fill="#ffffff" stroke="#e4e4e7"/>
+<text x="28" y="40" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#171717">Time spent optimizing in the browser</text>
+<text x="28" y="62" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b">Measured in chromium on 2026-11-19 · median of 3 runs · generated inputs (see benchmarks/)</text>
+<text x="28" y="96" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Phone photo (12 MP JPEG) → 2 MB limit</text>
+<rect x="28" y="104" width="130.8669179472311" height="14" rx="4" fill="#171717" opacity="0.85"/>
+<text x="166.8669179472311" y="116" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#171717">806 ms</text>
+<text x="28" y="142" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Phone photo (12 MP JPEG) → 1 MB limit</text>
+<rect x="28" y="150" width="131.67874746303278" height="14" rx="4" fill="#171717" opacity="0.85"/>
+<text x="167.67874746303278" y="162" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#171717">811 ms</text>
+<text x="28" y="188" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Retina screenshot (PNG → WebP) → 1 MB limit</text>
+<rect x="28" y="196" width="560" height="14" rx="4" fill="#171717" opacity="0.85"/>
+<text x="596" y="208" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#171717">3,449 ms</text>
+<text x="28" y="234" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">4-page PDF with photos</text>
+<rect x="28" y="242" width="69.81733835894462" height="14" rx="4" fill="#171717" opacity="0.85"/>
+<text x="105.81733835894462" y="254" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#171717">430 ms</text>
+<text x="28" y="280" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">DOCX with 3 photos</text>
+<rect x="28" y="288" width="99.85503044360685" height="14" rx="4" fill="#171717" opacity="0.85"/>
+<text x="135.85503044360684" y="300" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#171717">615 ms</text>
+<text x="28" y="326" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">ZIP of text logs (stored → deflate)</text>
+<rect x="28" y="334" width="9.579588286459844" height="14" rx="4" fill="#171717" opacity="0.85"/>
+<text x="45.579588286459845" y="346" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#171717">59 ms</text>
+<text x="28" y="376" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Images run in a Web Worker (OffscreenCanvas); documents re-encode their embedded images the same way.</text>
+</svg>

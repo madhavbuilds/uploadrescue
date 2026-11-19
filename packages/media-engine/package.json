@@ -1,0 +1,67 @@
+{
+  "name": "@uploadrescue/media-engine",
+  "version": "0.1.0",
+  "description": "Opt-in MP4/MOV/MP3/WAV optimization for UploadRescue using FFmpeg WebAssembly, loaded lazily from self-hosted assets.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhavbuilds/uploadrescue.git",
+    "directory": "packages/media-engine"
+  },
+  "homepage": "https://github.com/madhavbuilds/uploadrescue#readme",
+  "bugs": "https://github.com/madhavbuilds/uploadrescue/issues",
+  "keywords": [
+    "upload",
+    "file-upload",
+    "compression",
+    "retry",
+    "recovery",
+    "video",
+    "audio",
+    "ffmpeg"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@uploadrescue/core": "workspace:^"
+  },
+  "peerDependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.10"
+  },
+  "peerDependenciesMeta": {
+    "@ffmpeg/ffmpeg": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15"
+  }
+}

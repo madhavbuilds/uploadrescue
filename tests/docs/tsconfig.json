@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "baseUrl": "../..",
+    "types": ["node"],
+    "paths": {
+      "@uploadrescue/core": ["packages/core/src/index.ts"],
+      "@uploadrescue/react": ["packages/react/src/index.ts"],
+      "@uploadrescue/vanilla": ["packages/vanilla/src/index.ts"],
+      "@uploadrescue/ui": ["packages/ui/src/index.ts"],
+      "@uploadrescue/upload-adapters": ["packages/upload-adapters/src/index.ts"],
+      "@uploadrescue/image-engine": ["packages/image-engine/src/index.ts"],
+      "@uploadrescue/pdf-engine": ["packages/pdf-engine/src/index.ts"],
+      "@uploadrescue/document-engine": ["packages/document-engine/src/index.ts"],
+      "@uploadrescue/archive-engine": ["packages/archive-engine/src/index.ts"],
+      "@uploadrescue/media-engine": ["packages/media-engine/src/index.ts"],
+      "pdf-lib": ["packages/pdf-engine/node_modules/pdf-lib"],
+      "fflate": ["packages/archive-engine/node_modules/fflate"],
+      "@ffmpeg/ffmpeg": ["packages/media-engine/node_modules/@ffmpeg/ffmpeg"]
+    }
+  },
+  "include": [".generated/**/*.tsx", "provider-stubs.d.ts"]
+}

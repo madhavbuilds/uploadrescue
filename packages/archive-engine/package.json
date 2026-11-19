@@ -1,0 +1,56 @@
+{
+  "name": "@uploadrescue/archive-engine",
+  "version": "0.1.0",
+  "description": "Safe ZIP inspection and conservative repacking for UploadRescue, with zip-bomb and path-traversal protection.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhavbuilds/uploadrescue.git",
+    "directory": "packages/archive-engine"
+  },
+  "homepage": "https://github.com/madhavbuilds/uploadrescue#readme",
+  "bugs": "https://github.com/madhavbuilds/uploadrescue/issues",
+  "keywords": [
+    "upload",
+    "file-upload",
+    "compression",
+    "retry",
+    "recovery",
+    "zip",
+    "archive"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@uploadrescue/core": "workspace:^",
+    "fflate": "^0.8.2"
+  }
+}

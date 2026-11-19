@@ -1,0 +1,35 @@
+{
+  "name": "@uploadrescue/website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ffmpeg/core": "0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@fontsource-variable/inter": "^5.2.0",
+    "@uploadrescue/archive-engine": "workspace:^",
+    "@uploadrescue/core": "workspace:^",
+    "@uploadrescue/document-engine": "workspace:^",
+    "@uploadrescue/image-engine": "workspace:^",
+    "@uploadrescue/media-engine": "workspace:^",
+    "@uploadrescue/pdf-engine": "workspace:^",
+    "@uploadrescue/react": "workspace:^",
+    "@uploadrescue/ui": "workspace:^",
+    "marked": "^15.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.0"
+  }
+}

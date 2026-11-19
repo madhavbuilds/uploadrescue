@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="446" viewBox="0 0 880 446" role="img" aria-label="File size before and after optimization">
+<title>File size before and after optimization</title>
+<rect x="0.5" y="0.5" width="879" height="445" rx="14" fill="#ffffff" stroke="#e4e4e7"/>
+<text x="28" y="40" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#171717">How much smaller files get</text>
+<text x="28" y="62" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b">Measured in chromium on 2026-11-19 · median of 3 runs · generated inputs (see benchmarks/)</text>
+<text x="28" y="96" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Phone photo (12 MP JPEG) → 2 MB limit</text>
+<rect x="28" y="105" width="470" height="14" rx="4" fill="#a1a1aa" opacity="0.45"/>
+<rect x="28" y="105" width="44.66390227655408" height="14" rx="4" fill="#16a34a"/>
+<text x="520" y="117" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">20.3 MB → 1.93 MB</text>
+<text x="852" y="117" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d" text-anchor="end">−90.5%</text>
+<text x="28" y="150" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Phone photo (12 MP JPEG) → 1 MB limit</text>
+<rect x="28" y="159" width="470" height="14" rx="4" fill="#a1a1aa" opacity="0.45"/>
+<rect x="28" y="159" width="23.037538808442545" height="14" rx="4" fill="#16a34a"/>
+<text x="520" y="171" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">20.3 MB → 1.00 MB</text>
+<text x="852" y="171" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d" text-anchor="end">−95.1%</text>
+<text x="28" y="204" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">Retina screenshot (PNG → WebP) → 1 MB limit</text>
+<rect x="28" y="213" width="470" height="14" rx="4" fill="#a1a1aa" opacity="0.45"/>
+<rect x="28" y="213" width="92.23932617457702" height="14" rx="4" fill="#16a34a"/>
+<text x="520" y="225" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">5.00 MB → 0.98 MB</text>
+<text x="852" y="225" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d" text-anchor="end">−80.4%</text>
+<text x="28" y="258" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">4-page PDF with photos</text>
+<rect x="28" y="267" width="470" height="14" rx="4" fill="#a1a1aa" opacity="0.45"/>
+<rect x="28" y="267" width="25.23923072316798" height="14" rx="4" fill="#16a34a"/>
+<text x="520" y="279" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">28.8 MB → 1.55 MB</text>
+<text x="852" y="279" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d" text-anchor="end">−94.6%</text>
+<text x="28" y="312" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">DOCX with 3 photos</text>
+<rect x="28" y="321" width="470" height="14" rx="4" fill="#a1a1aa" opacity="0.45"/>
+<rect x="28" y="321" width="28.559070297582014" height="14" rx="4" fill="#16a34a"/>
+<text x="520" y="333" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">30.0 MB → 1.82 MB</text>
+<text x="852" y="333" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d" text-anchor="end">−93.9%</text>
+<text x="28" y="366" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">ZIP of text logs (stored → deflate)</text>
+<rect x="28" y="375" width="470" height="14" rx="4" fill="#a1a1aa" opacity="0.45"/>
+<rect x="28" y="375" width="49.545828876009494" height="14" rx="4" fill="#16a34a"/>
+<text x="520" y="387" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">2.77 MB → 0.29 MB</text>
+<text x="852" y="387" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d" text-anchor="end">−89.5%</text>
+<rect x="28" y="414" width="12" height="12" rx="3" fill="#a1a1aa" opacity="0.45"/><text x="46" y="424" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">original size</text>
+<rect x="140" y="414" width="12" height="12" rx="3" fill="#16a34a"/><text x="158" y="424" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">after UploadRescue</text>
+</svg>

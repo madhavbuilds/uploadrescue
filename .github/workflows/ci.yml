@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  NEXT_TELEMETRY_DISABLED: "1"
+  TURBO_TELEMETRY_DISABLED: "1"
+
+jobs:
+  checks:
+    name: Lint, types, unit & integration tests, build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Lint
+        run: pnpm lint
+      - name: Formatting
+        run: pnpm format:check
+      - name: Build packages
+        run: pnpm build
+      - name: Generated worker source is up to date
+        run: git diff --exit-code -- packages/image-engine/src/generated
+      - name: Type check
+        run: pnpm typecheck
+      - name: Documentation snippets type-check
+        run: pnpm check:docs
+      - name: Package exports (publint, ESM + CJS load)
+        run: pnpm check:exports
+      - name: Unit, integration, security, React and SSR tests
+        run: pnpm test
+      - name: Build website and examples
+        run: pnpm build:all
+      - name: Bundle size report
+        run: pnpm size
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bundle-size
+          path: benchmarks/bundle-size.md
+
+  e2e:
+    name: Browser tests (${{ matrix.browser }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - name: Copy FFmpeg core for the harness
+        run: pnpm --filter @uploadrescue/website build
+      - run: pnpm exec playwright install --with-deps ${{ matrix.browser }}
+      - run: pnpm test:e2e --project=${{ matrix.browser }}
+        env:
+          CI: "1"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report-${{ matrix.browser }}
+          path: playwright-report
+          retention-days: 7

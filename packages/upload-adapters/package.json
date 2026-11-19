@@ -1,0 +1,57 @@
+{
+  "name": "@uploadrescue/upload-adapters",
+  "version": "0.1.0",
+  "description": "Optional upload adapters for UploadRescue: fetch, XHR with progress, multipart, S3 presigned, Supabase, Firebase and Cloudinary.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhavbuilds/uploadrescue.git",
+    "directory": "packages/upload-adapters"
+  },
+  "homepage": "https://github.com/madhavbuilds/uploadrescue#readme",
+  "bugs": "https://github.com/madhavbuilds/uploadrescue/issues",
+  "keywords": [
+    "upload",
+    "file-upload",
+    "compression",
+    "retry",
+    "recovery",
+    "s3",
+    "supabase",
+    "firebase",
+    "cloudinary"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@uploadrescue/core": "workspace:^"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-19",
+  "browser": "chromium",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.33 Safari/537.36",
+  "rows": [
+    {
+      "id": "photo-2mb",
+      "label": "Phone photo (12 MP JPEG) → 2 MB limit",
+      "engine": "image",
+      "inputBytes": 21326223,
+      "outputBytes": 2026622,
+      "targetBytes": 2097152,
+      "withinTarget": true,
+      "medianMs": 806,
+      "outputType": "image/jpeg"
+    },
+    {
+      "id": "photo-1mb",
+      "label": "Phone photo (12 MP JPEG) → 1 MB limit",
+      "engine": "image",
+      "inputBytes": 21326223,
+      "outputBytes": 1045327,
+      "targetBytes": 1048576,
+      "withinTarget": true,
+      "medianMs": 811,
+      "outputType": "image/jpeg"
+    },
+    {
+      "id": "screenshot",
+      "label": "Retina screenshot (PNG → WebP) → 1 MB limit",
+      "engine": "image",
+      "inputBytes": 5244207,
+      "outputBytes": 1029196,
+      "targetBytes": 1048576,
+      "withinTarget": true,
+      "medianMs": 3449,
+      "outputType": "image/webp"
+    },
+    {
+      "id": "pdf",
+      "label": "4-page PDF with photos",
+      "engine": "pdf",
+      "inputBytes": 30243001,
+      "outputBytes": 1624064,
+      "targetBytes": null,
+      "withinTarget": true,
+      "medianMs": 430,
+      "outputType": "application/pdf"
+    },
+    {
+      "id": "docx",
+      "label": "DOCX with 3 photos",
+      "engine": "document",
+      "inputBytes": 31491453,
+      "outputBytes": 1913546,
+      "targetBytes": null,
+      "withinTarget": true,
+      "medianMs": 615,
+      "outputType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "zip",
+      "label": "ZIP of text logs (stored → deflate)",
+      "engine": "archive",
+      "inputBytes": 2899722,
+      "outputBytes": 305679,
+      "targetBytes": null,
+      "withinTarget": true,
+      "medianMs": 59,
+      "outputType": "application/zip"
+    }
+  ]
+}

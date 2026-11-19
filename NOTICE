@@ -1,0 +1,10 @@
+UploadRescue
+Copyright 2026 The UploadRescue Authors
+
+This product is licensed under the Apache License, Version 2.0.
+
+Optional runtime dependencies are distributed under their own licenses:
+- fflate (MIT)
+- pdf-lib (MIT)
+- @ffmpeg/ffmpeg (MIT) and @ffmpeg/core (FFmpeg, LGPL/GPL depending on build)
+  — installed and hosted by the integrating application, not bundled.

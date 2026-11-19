@@ -1,0 +1,15 @@
+dist
+.next
+.turbo
+coverage
+pnpm-lock.yaml
+playwright-report
+test-results
+packages/image-engine/src/generated
+CHANGELOG.md
+apps/website/public
+tests/docs/.generated
+examples/nextjs/next-env.d.ts
+docs
+benchmarks/*.md
+benchmarks/*.json

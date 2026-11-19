@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-19",
+  "scenarios": [
+    {
+      "id": "react",
+      "label": "React: <UploadRescue> (react external)",
+      "initialBytes": 14149,
+      "lazyBytes": 6706
+    },
+    {
+      "id": "vanilla",
+      "label": "Vanilla: createUploadRescue",
+      "initialBytes": 14694,
+      "lazyBytes": 6706
+    },
+    {
+      "id": "core",
+      "label": "Core only: createUploadRescue",
+      "initialBytes": 9548,
+      "lazyBytes": 0
+    }
+  ],
+  "packages": [
+    {
+      "name": "@uploadrescue/archive-engine",
+      "ownBytes": 3648,
+      "withDepsBytes": 8332,
+      "lazyBytes": 0
+    },
+    {
+      "name": "@uploadrescue/core",
+      "ownBytes": 10279,
+      "withDepsBytes": 10279,
+      "lazyBytes": 0
+    },
+    {
+      "name": "@uploadrescue/document-engine",
+      "ownBytes": 1568,
+      "withDepsBytes": 12541,
+      "lazyBytes": 0
+    },
+    {
+      "name": "@uploadrescue/image-engine",
+      "ownBytes": 6737,
+      "withDepsBytes": 7715,
+      "lazyBytes": 0
+    },
+    {
+      "name": "@uploadrescue/media-engine",
+      "ownBytes": 2541,
+      "withDepsBytes": 3586,
+      "lazyBytes": 0
+    },
+    {
+      "name": "@uploadrescue/pdf-engine",
+      "ownBytes": 2394,
+      "withDepsBytes": 4023,
+      "lazyBytes": 188424
+    },
+    {
+      "name": "@uploadrescue/react",
+      "ownBytes": 2213,
+      "withDepsBytes": 14504,
+      "lazyBytes": 6706
+    },
+    {
+      "name": "@uploadrescue/ui",
+      "ownBytes": 4176,
+      "withDepsBytes": 5785,
+      "lazyBytes": 6707
+    },
+    {
+      "name": "@uploadrescue/upload-adapters",
+      "ownBytes": 2395,
+      "withDepsBytes": 3221,
+      "lazyBytes": 0
+    },
+    {
+      "name": "@uploadrescue/vanilla",
+      "ownBytes": 1201,
+      "withDepsBytes": 14723,
+      "lazyBytes": 6706
+    }
+  ]
+}

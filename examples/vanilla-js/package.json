@@ -1,0 +1,21 @@
+{
+  "name": "@uploadrescue/example-vanilla",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5175 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5175 --strictPort",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@uploadrescue/ui": "workspace:^",
+    "@uploadrescue/upload-adapters": "workspace:^",
+    "@uploadrescue/vanilla": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "vite": "^7.1.0"
+  }
+}
